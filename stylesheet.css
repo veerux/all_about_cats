@@ -2,7 +2,7 @@ body {
   font-family: sans;
   color: #3a3a3a;
   margin: 0px;
-  text-align: center;
+  font-size: 19px;
 }
 
 h1 {
@@ -19,9 +19,14 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  color: #F9305B;
+  font-size: 24px;
+}
+
 .title {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   padding: 0px;
 }
 
@@ -36,10 +41,11 @@ header {
   background-size: cover;
   margin: 0px;
   height: 580px;
+  text-align: center;
 }
 
 main {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
@@ -49,6 +55,7 @@ footer {
   bottom: 0;
   margin-bottom: 0px;
   padding: 10px;
+  text-align: center;
 }
 
 
@@ -75,7 +82,7 @@ footer {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
@@ -83,4 +90,102 @@ footer {
   color: #034078;
 }
 
-/* CONTENT ------------*/
+/* INDEX ------------*/
+
+.index {
+  display: flex;
+  justify-content: space-around;
+}
+
+.index div {
+  margin: 50px;
+}
+
+.index img {
+  width: 500px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.index a {
+  color: #034078;
+}
+
+
+/* PICTURES -----------*/
+.gallery {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  margin: 20px
+}
+
+.gallery img {
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* RESCUE ----------------*/
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col1 {
+  text-align: left;
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+}
+
+.col2 {
+  order: -1;
+}
+
+.col3 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  flex-basis: 50%;
+}
+
+.col3 h2 {
+  text-align: center;
+}
+
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #034078;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: #034061;
+}
